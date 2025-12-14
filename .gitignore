@@ -1,0 +1,128 @@
+# ======================
+# OS / Editor / IDE
+# ======================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+out/
+# keep user-specific project files out
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+
+# VS Code
+.vscode/
+
+# ======================
+# Build systems / Java
+# ======================
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+target/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# logs
+*.log
+logs/
+
+# ======================
+# Spring Boot / Config
+# ======================
+# local dev configs and secrets
+application-local.yml
+application-local.properties
+application-*.local.yml
+application-*.local.properties
+spring.log
+
+# env files (keep .env local)
+.env
+*.env
+
+# ======================
+# Docker / Compose
+# ======================
+# local docker-compose overrides / env files
+docker-compose.override.yml
+**/docker-compose.override.yml
+**/*.env
+
+# ignore docker volume files / mounts (if present)
+docker-volume-*
+*.tar
+
+# ======================
+# Databases / Containers
+# ======================
+# sqlite / local DB files
+*.db
+*.sqlite
+# Postgres data directories (if ever created locally)
+pgdata/
+postgres-data/
+
+# ======================
+# Testcontainers / CI
+# ======================
+testcontainers-*.log
+# coverage
+coverage/
+*.cover
+
+# ======================
+# IDE / Misc extras
+# ======================
+# JetBrains caches
+.idea/**/shelf/
+.idea/**/dictionaries
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+
+# Temp files
+tmp/
+temp/
+*.pid
+*.seed
+*.orig
+
+# SSH / keys
+*.jks
+*.keystore
+credentials/
+secrets/
+*.crt
+*.pem
+*.cer
+
+# ======================
+# Optional: node / frontend
+# ======================
+node_modules/
+
+# ======================
+# Safety belt: ignore OS generated files again
+# ======================
+Thumbs.db
+.DS_Store
